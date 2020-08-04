@@ -1,0 +1,101 @@
+1. What is Semantic HTML? 
+ code that will perform a function (h1, p, ul, etc)
+    2. What is HTML used for? 
+ used for the foundation of a web page
+    3. What is an attribute and where do we put it? 
+provides specificity and is included in opening tags
+    4. What is the h1 tag used for? How many times should I use it on a page?
+ the most important content on a web page, and we only use it ONCE! (like the title to a book or play)
+    5. Name two tags that have required attributes
+img and a
+    6. What do we put in the head of our HTML document? 
+Header
+    7. What is an id? 
+a unique identifier to be used once, opposed to a class which we can use in multiple areas, called with the "#" sign
+    8. What elements can I add an id to? 
+style, html element
+    9. How many times can I use the same id on a page? 
+once
+    10. What is a class? 
+similar to an id, class groups blocks of code to be manipulated in CSS
+    11. What elements can I add a class to? 
+all html elements
+    12. How many times can I use the same class on a page? 
+multiple
+    13. How do I get my link to open in a new tab?
+ _blank
+    14. What is the alt attribute in the image tag used for? 
+alternative dictation for accessibility purposes
+    15. How do I reference an id?
+#
+    16. What is the difference between a section and a div
+sections are used for a more targeted group of code, divs cover multiple aspects
+    17. What is CSS used for? 
+to style a web page, colors, sizes, borders, etc
+    18. How to we select an element? Example - every h2 on the page
+h2{} in css
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+class will be used to change multiple elements on a page, an id only changes one. class could be used to change all links on a page, and 
+      id would change only one aspect such as a button
+    20. How do we select classes in CSS?
+ .classname
+    21. How do we select a p element with a single class of “human””?
+ p.human
+    22. What is a parent child selector? When would this be useful?
+a child is nested in a parent, so when working with lists this would be used 
+    23. How do you select all links within a div with the class of sidebar?
+ div.sidebar
+    24. What is a pseudo selector?
+ key word added to a selector that specifies what it should do, such as 'hover'
+    25. What do we use the change the spacing between lines?
+line-height
+    26. What do we use to change the spacing between letters?
+padding
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+text-transform:
+    28. How do I add a 1px border around my div that is dotted and black?
+border: 1px dotted black;
+    29. How do I select everything on the page? 
+body{}
+    30. How do I write a comment in CSS?
+/* comment here */
+    31. How do I find out what file I am in, when I am using the command line? 
+ls
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm - there is no warning prompt when removing a file in terminal
+    34. Why should I use version control? 
+logs all changes ever made to a file
+    35. How often should I commit to github?
+frequently, when you make significant changes, when you change functionality
+    36. What is the command we would use to push our repo up to github? 
+git push
+    37. Walk me through Lambda's git flow. 
+fork repo
+Add TL for collaboration
+cd to directory you want repo to fork to
+clone repo in gitbash
+cd to new repo
+create branch with git checkout -b first-lastname
+work in visual studio
+git add repo
+git commit -m "message for github"
+git push -u origin fist-lastname
+submit pull request
+confirm you are on your forked project and not the original project
+add TL and submit
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+ inline elements only take up space necessary/dont start on a new line, block elements always start on a new line and take up entire working space
+    2. What happens when an element is positioned absolutely? 
+element refers to parent div to decide where it is positioned, it seperates itself from everything else
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+using an inline element, or <span>
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+display block: p, h1, div . display inline: <span>, a. inline-block: button.
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+box model allows us to make a 'box' for content such as size, margins, padding, borders, to make our page more presentable. The 'fix' is to use %
